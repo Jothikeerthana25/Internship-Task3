@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            background: url(bck1.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 50px;
+            font-size: 2.5em; /* Increased size for visibility */
+        }
+
+        .container {
+            width: 90%; /* Responsive width */
+            max-width: 400px; /* Maximum width for larger screens */
+            margin: 0 auto;
+            background:transparent; /* Semi-transparent background */
+            padding: 90px; /* Adjusted padding */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        label {
+            font-weight: bold;
+            text-align: left;
+            color: white;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: transparent;
+            font-weight: bold;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+
+        .forgot-password {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0;
+            text-decoration: none;
+            color: white;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        h4 {
+            color: white;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Media Queries for Responsive Design */
+        @media (max-width: 600px) {
+            
+            h1 {
+                font-size: 2em; /* Smaller font size for mobile */
+            }
+
+            .container {
+                padding: 20px; /* Reduced padding */
+            }
+
+            input {
+                padding: 8px; /* Smaller input padding */
+            }
+        }
+
+        @media (max-width: 480px) {
+            body{
+                background: url(cl.jpg) no-repeat;
+                background-size: cover;
+            }
+            
+            h1 {
+                font-size: 1.5em; /* Further reduced size */
+            }
+
+            .container {
+                padding: 15px; /* Less padding for smaller screens */
+            }
+
+            input {
+                padding: 7px; /* Smaller padding for inputs */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to login Page</h1>
+    <div class="container">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" placeholder="Enter Password" required>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+
+            <input type="submit" value="Login">
+            <h4><a href="newreg.html">Do you want to create an account? Sign Up</a></h4>
+        </form>
+    </div>
+</body>
+</html>
